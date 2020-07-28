@@ -1,0 +1,109 @@
+.card {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding-top: 5rem;
+}
+
+.black-card {
+    color: white;
+    background-color: rgb(24, 22, 22);
+}
+
+.card__pic-container {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 2rem 0;
+}
+
+.card__pic {
+    width: 20rem;
+    height: 20rem;
+}
+
+.card__pic img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1rem solid rgba(44, 42, 42, 0.034);
+    border-radius: 100%;
+}
+
+.black-card .card__pic img {
+    border: 1rem solid rgba(168, 157, 157, 0.342);
+}
+
+.card__info {
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2rem 0;
+}
+
+.card__info-data {
+    width: 100%;
+    height: 20%;
+}
+
+.card__info-data h3 {
+    font-size: 2rem;
+}
+
+.card__info-data h4 {
+    font-size: 1.2rem;
+}
+
+.card__info-description {
+    width: 80%;
+    height: 70%;
+}
+
+.card__info-description p {
+    font-size: 1.1rem;
+}
+
+.card__pic:hover {
+    cursor: pointer;
+    animation-name: turnPic;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    will-change: transform;
+}
+
+.card__info-source {
+    width: 80%;
+    height: 8%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.card__info-source span a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(34, 32, 32);
+}
+
+
+.black-card .card__info-source span a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes turnPic {
+    0% {
+        transform: rotateZ(20deg);
+    }
+    100% {
+        transform: rotateZ(-20deg);
+    }
+}
