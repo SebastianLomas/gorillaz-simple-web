@@ -41,3 +41,19 @@
     letter-spacing: 0.3rem;
     color: rgba(224, 90, 57, 0.993);
 }
+
+@media screen and (max-width: 1024px) {
+    .header__logo h1 {
+        letter-spacing: initial;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header__logo h1 {
+        font-size: 1.7rem;
+    }
+
+    .header__menu i {
+        font-size: 1.7rem;
+    }
+}

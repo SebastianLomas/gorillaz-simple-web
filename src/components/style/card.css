@@ -107,3 +107,54 @@
         transform: rotateZ(-20deg);
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .card {
+        height: auto;
+        flex-direction: column;
+        padding: 5rem 0;
+    }
+
+    .card__pic-container {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .card__pic {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .card__pic img, {
+        border: 0.5rem solid rgba(44, 42, 42, 0.034)
+    }
+
+    .black-card .card__pic img {
+        border: 0.5rem solid rgba(168, 157, 157, 0.342);
+    }
+
+    .card__info {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .card__info-data {
+        height: auto;
+        text-align: center;
+    }
+
+    .card__info-data h3 {
+        font-size: 1.7rem;
+    }
+
+    .card__info-description {
+        height: auto;
+        margin: 1rem auto;
+    }
+
+    .card__info-description p {
+        font-size: 1.3rem;
+    }
+}
