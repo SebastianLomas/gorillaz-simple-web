@@ -18,3 +18,17 @@
     font-size: 2.5rem;
     color: rgb(26 112 178);
 }
+
+@media screen and (max-height: 410px) {
+    .hero {
+        padding: 1rem 10% 15%;
+    }
+
+    .hero__title {
+        width: 100%
+    }
+
+    .hero__title h2 {
+        text-align: center;
+    }
+}
